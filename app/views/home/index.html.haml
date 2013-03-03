@@ -2,20 +2,20 @@
 %h3 A Site for Strength
 
 %div
-  %label Exercise
-  %input 
+  %label{:for => "exercise"} Exercise
+  %input{:type => "text", :id => "exercise"} 
   %br
 
-  %label Weight
-  %input 
+  %label{:for => "weight"} Weight
+  %input{:type => "text", :id => "weight"} 
   %br
 
-  %label Reps
-  %input 
+  %label{:for => "reps"} Reps
+  %input{:type => "text", :id => "reps"} 
   %br
 
-  %label Sets
-  %input 
+  %label{:for => "sets"} Sets
+  %input{:type => "text", :id => "sets"} 
   %br
 
   %input{:type => "submit", :value => "Submit", :class => "button"}
