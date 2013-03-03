@@ -18,8 +18,12 @@
   %input 
   %br
 
-%a.twitter-share-button{"data-related" => "sets_across", 
+  %input{:type => "submit", :value => "Submit", :class => "button"}
+
+%a.twitter-share-button-template{"data-related" => "sets_across", 
   "data-size" => "large", 
   "data-text" => "I just completed Squats: 170X5X3", 
   "data-via" => "sets_across", 
+  :style => "display:none;",
   :href => "https://twitter.com/share"} Tweet
+.twitter-share-button-div
