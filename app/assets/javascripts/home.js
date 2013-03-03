@@ -1,21 +1,3 @@
-// the twitter share button does not natively support being dynamically
-// updated after the page loads. We want to give it a unique (social_id)
-// link whenver this modal is shown. We engage in some jQuery fun here to 
-// clone a 'hidden' twitter share button and then force the Twitter
-// Javascript to load.
-
-/*
-*/
-!function(d,s,id) {
-  var js,fjs=d.getElementsByTagName(s)[0];
-  if(!d.getElementById(id)) {
-    js=d.createElement(s);
-    js.id=id;
-    js.src="//platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-}(document,"script","twitter-wjs");
-
 $(document).ready(function() {
 
   $('.button').click(function() {
@@ -36,20 +18,3 @@ $(document).ready(function() {
     $.getScript("http://platform.twitter.com/widgets.js");
   });
 });
-
-// remove any previous clone
-/*
-$('#tweetSubmit').on('click', function(ev) {
-  ev.preventDefault();
-  // Remove existing iframe
-  $('#tweetBtn iframe').remove();
-  // Generate new markup
-  var tweetBtn = $('<a></a>')
-    .addClass('twitter-share-button')
-    .attr('href', 'http://twitter.com/share')
-    .attr('data-url', 'http://test.com')
-    .attr('data-text', $('#tweetText').val());
-  $('#tweetBtn').append(tweetBtn);
-  twttr.widgets.load();
-});
-*/
