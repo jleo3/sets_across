@@ -1,29 +1,47 @@
-%h1 Welcome to Sets Across
-%h3 A Site for Strength
+%body
+  .centrecontainer
+    .outercontainer
+      .header
+        .menu
+          %li
+            %a Link
+            %a Link
+            %a Link
+            %a Link
 
-%div
-  %label{:for => "exercise"} Exercise
-  %input{:type => "text", :id => "exercise"} 
-  %br
+      .container
+        .containerleft{:style => "background-image: url(#{image_path "containerright-image.jpg"})"}
+          
+          %h2 Welcome to Sets Across
 
-  %label{:for => "weight"} Weight
-  %input{:type => "text", :id => "weight"} 
-  %br
+        .containerright
+          %h2 Workout
 
-  %label{:for => "reps"} Reps
-  %input{:type => "text", :id => "reps"} 
-  %br
+          %label{:for => "exercise"} Exercise
+          %input{:type => "text", :id => "exercise"} 
+          %br
 
-  %label{:for => "sets"} Sets
-  %input{:type => "text", :id => "sets"} 
-  %br
+          %label{:for => "weight"} Weight
+          %input{:type => "text", :id => "weight"} 
+          %br
 
-  %input{:type => "submit", :value => "Submit", :class => "button"}
+          %label{:for => "reps"} Reps
+          %input{:type => "text", :id => "reps"} 
+          %br
 
-%a.twitter-share-button-template{"data-related" => "sets_across", 
-  "data-size" => "large", 
-  "data-text" => "I just completed Squats: 170X5X3", 
-  "data-via" => "sets_across", 
-  :style => "display:none;",
-  :href => "https://twitter.com/share"} Tweet
-.twitter-share-button-div
+          %label{:for => "sets"} Sets
+          %input{:type => "text", :id => "sets"} 
+          %br
+
+          %input{:type => "submit", :value => "Submit", :class => "button"}
+
+          %a.twitter-share-button-template{"data-related" => "sets_across", 
+            "data-size" => "large", 
+            "data-text" => "I just completed Squats: 170X5X3", 
+            "data-via" => "sets_across", 
+            :style => "display:none;",
+            :href => "https://twitter.com/share"} Tweet
+          .twitter-share-button-div
+
+      .footer
+        %a{:href => "http://www.tristarwebdesign.co.uk"} design by tri-star web design
