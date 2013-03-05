@@ -2,31 +2,28 @@
   .centrecontainer
     .outercontainer
       .header
+        %h2 Welcome to Sets Across
         .menu
-
       .container
-        .containerleft{:style => "background-image: url(#{image_path "containerright-image.jpg"})"}
+        .containerleft{:style => "background-image: url(#{image_path "power_barbell.gif"})"}
           
-          %h2 Welcome to Sets Across
 
         .containerright
           %h2 Workout
 
-          %label{:for => "exercise"} Exercise
-          %input{:type => "text", :id => "exercise"} 
-          %br
+          .inputs
+            %label{:for => "exercise"} Exercise
+            %input{:type => "text", :id => "exercise"} 
+            %br
 
-          %label{:for => "weight"} Weight
-          %input{:type => "text", :id => "weight"} 
-          %br
+            %label{:for => "weight"} Weight
+            %input{:type => "text", :id => "weight"} 
 
-          %label{:for => "reps"} Reps
-          %input{:type => "text", :id => "reps"} 
-          %br
+            %label{:for => "reps"} Reps
+            %input{:type => "text", :id => "reps"} 
 
-          %label{:for => "sets"} Sets
-          %input{:type => "text", :id => "sets"} 
-          %br
+            %label{:for => "sets"} Sets
+            %input{:type => "text", :id => "sets"} 
 
           %input{:type => "submit", :value => "Submit", :class => "button"}
 
@@ -37,3 +34,4 @@
             :style => "display:none;",
             :href => "https://twitter.com/share"} Tweet
           .twitter-share-button-div
+      %h2 A Site for Strength

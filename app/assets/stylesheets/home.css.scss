@@ -42,7 +42,7 @@ a:hover
 {
 	margin-left: -400px;
 	position: absolute;
-	top: -236px;
+	bottom: -150px;
 	left: 50%;
 }
 
@@ -56,14 +56,14 @@ a:hover
 .container    
 {
 	border: 20px solid #FFF;
-	width: 760px;
+	width: 890px;
 	height: 370px;
 }
 
 .containerleft
 {
 	float: left;
-	width: 350px;
+	width: 480px;
 	height: 350px;
 	border-right: 20px solid #FFF;
 	padding: 10px;
@@ -139,24 +139,15 @@ a:hover
 	padding: 0 0 20px 10px;
 }
 
-.menu li
+.inputs label
 {
-	margin: 0;
-	padding: 0;
-	display: inline;
-	list-style-type: none;
+	font-family: arial;
+  width: 20px;
 }
 
-.menu a
+.inputs input
 {
-	float: right;
-	padding: 0 12px 10px 12px;
-	text-decoration: none;
-	color: #FFF;
-}
-
-.menu a:hover
-{
-	color: #FF80A8;
-	background: url(menu-hover.jpg) no-repeat bottom center;
+  width: 20px;
+  text-align: right;
+  position: relative;
 }
