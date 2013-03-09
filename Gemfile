@@ -5,7 +5,6 @@ gem 'rails', '3.2.12'
 
 gem 'heroku'
 
-gem 'sqlite3'
 gem 'haml'
 gem 'haml-rails'
 gem 'tilt', '1.3.4'
@@ -15,6 +14,7 @@ group :production do
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec-rails'
   gem 'sqlite3'
 end
