@@ -1,12 +1,14 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '1.9.3'
 gem 'rails', '3.2.12'
+
+gem 'heroku'
 
 gem 'sqlite3'
 gem 'haml'
 gem 'haml-rails'
-gem 'tilt', '1.3.5'
+gem 'tilt', '1.3.4'
 
 group :production do
   gem 'pg'
@@ -24,7 +26,8 @@ group :assets do
   gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', platforms: :ruby
+  gem 'libv8'
+  gem 'therubyracer', '0.10.2', platforms: :ruby
 
   gem 'uglifier'
 end

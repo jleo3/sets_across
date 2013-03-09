@@ -1,0 +1,195 @@
+find_executable: checking for pg_config... -------------------- yes
+
+--------------------
+
+find_header: checking for libpq-fe.h... -------------------- yes
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+/* end */
+
+--------------------
+
+find_header: checking for libpq/libpq-fs.h... -------------------- yes
+
+"gcc -E -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq/libpq-fs.h>
+/* end */
+
+--------------------
+
+find_header: checking for pg_config_manual.h... -------------------- yes
+
+"gcc -E -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <pg_config_manual.h>
+/* end */
+
+--------------------
+
+have_library: checking for PQconnectdb() in -lpq... -------------------- no
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -lpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+/usr/lib/libpq.so: undefined reference to `SSL_CTX_use_certificate_chain_file@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_write@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_set_fd@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_use_PrivateKey_file@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `CRYPTO_set_locking_callback@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `X509_NAME_get_text_by_NID@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_connect@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ENGINE_init@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `X509_STORE_load_locations@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_CTX_get_cert_store@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_free@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_library_init@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_CTX_ctrl@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ERR_get_error@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_pending@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ENGINE_free@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `X509_get_subject_name@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_use_certificate_file@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_check_private_key@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_load_error_strings@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ENGINE_by_id@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_get_peer_certificate@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_CTX_new@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `CRYPTO_num_locks@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ENGINE_load_private_key@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ENGINE_finish@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_set_verify@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `X509_free@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `CRYPTO_set_id_callback@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_get_error@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_new@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_shutdown@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_use_PrivateKey@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `TLSv1_method@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `X509_STORE_set_flags@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_read@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `OPENSSL_config@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_CTX_load_verify_locations@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `ERR_reason_error_string@OPENSSL_1.0.0'
+/usr/lib/libpq.so: undefined reference to `SSL_set_ex_data@OPENSSL_1.0.0'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectdb; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -lpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:1: error: too few arguments to function ‘PQconnectdb’
+In file included from conftest.c:3:0:
+/usr/include/postgresql/libpq-fe.h:243:16: note: declared here
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { PQconnectdb(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for PQconnectdb() in -llibpq... -------------------- no
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -llibpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+/usr/bin/ld: cannot find -llibpq
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectdb; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -llibpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:1: error: too few arguments to function ‘PQconnectdb’
+In file included from conftest.c:3:0:
+/usr/include/postgresql/libpq-fe.h:243:16: note: declared here
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { PQconnectdb(); return 0; }
+/* end */
+
+--------------------
+
+have_library: checking for PQconnectdb() in -lms/libpq... -------------------- no
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -lms/libpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+/usr/bin/ld: cannot find -lms/libpq
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))PQconnectdb; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/i686-linux -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1/ruby/backward -I/home/joe/.rvm/rubies/ruby-1.9.3-p392/include/ruby-1.9.1 -I.  -D_FILE_OFFSET_BITS=64  -I/home/joe/.rvm/usr/include -I/usr/include/postgresql  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -Wl,-R/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/usr/lib -Wl,-R/home/joe/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/joe/.rvm/usr/lib  -Wl,-R/home/joe/.rvm/usr/lib  -L/usr/lib     -Wl,-R -Wl,/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -L/home/joe/.rvm/rubies/ruby-1.9.3-p392/lib -lruby -lms/libpq  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:7:1: error: too few arguments to function ‘PQconnectdb’
+In file included from conftest.c:3:0:
+/usr/include/postgresql/libpq-fe.h:243:16: note: declared here
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libpq-fe.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { PQconnectdb(); return 0; }
+/* end */
+
+--------------------
+

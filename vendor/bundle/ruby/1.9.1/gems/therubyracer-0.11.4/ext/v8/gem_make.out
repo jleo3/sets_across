@@ -1,0 +1,36 @@
+/home/joe/.rvm/rubies/ruby-1.9.3-p392/bin/ruby extconf.rb 
+checking for main() in -lpthread... yes
+creating Makefile
+
+make
+compiling date.cc
+compiling function.cc
+compiling value.cc
+compiling primitive.cc
+compiling script.cc
+compiling handles.cc
+compiling exception.cc
+compiling constants.cc
+compiling message.cc
+compiling template.cc
+compiling rr.cc
+compiling invocation.cc
+compiling array.cc
+compiling v8.cc
+compiling locker.cc
+compiling accessor.cc
+compiling string.cc
+compiling gc.cc
+compiling signature.cc
+compiling object.cc
+compiling stack.cc
+compiling backref.cc
+compiling external.cc
+compiling context.cc
+compiling init.cc
+compiling constraints.cc
+compiling heap.cc
+compiling trycatch.cc
+linking shared-object v8/init.so
+collect2: error: ld returned 1 exit status
+make: *** [init.so] Error 1
