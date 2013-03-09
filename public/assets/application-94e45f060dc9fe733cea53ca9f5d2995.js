@@ -10356,7 +10356,7 @@ $(document).ready(function() {
     var weight = $('#weight').val();
     var reps = $('#reps').val();
     var sets = $('#sets').val();
-    var tweet = "I just completed " + exercise + ":" + weight + "X" + reps + "X" + sets;
+    var tweet = "I just completed " + exercise + "s:" + weight + "X" + reps + "X" + sets + " sets across";
 
     $('#twitter-share-button-div').empty()
     var clone = $('.twitter-share-button-template').clone()
@@ -10381,6 +10381,7 @@ $(document).ready(function() {
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+
 
 
 
