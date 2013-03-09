@@ -6,6 +6,7 @@ gem 'rails', '3.2.12'
 gem 'sqlite3'
 gem 'haml'
 gem 'haml-rails'
+gem 'tilt', '1.3.5'
 
 group :production do
   gem 'pg'
