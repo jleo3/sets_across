@@ -5,7 +5,7 @@ $(document).ready(function() {
     var weight = $('#weight').val();
     var reps = $('#reps').val();
     var sets = $('#sets').val();
-    var tweet = "I just finished the " + exercise + ": " + weight + "X" + reps + "X" + sets + " using @weightd_! Check it out: weightd.com";
+    var tweet = "I just finished " + exercise + ": " + weight + "X" + reps + "X" + sets + " using @_weightd! Check it out: weightd.com";
 
     $('#twitter-share-button-div').empty()
     var clone = $('.twitter-share-button-template').clone()

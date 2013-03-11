@@ -11,11 +11,12 @@
         .containerright
           %h2 Workout
 
-          .inputs
+          .exercise
             %label{:for => "exercise"} Exercise
-            =select_tag("exercise", "<option>Squat</option><option>Deadlift</option><option>Press</option><option>Bench Press</option>".html_safe)
+            %input{:type => "text", :id => "exercise"} 
             %br
 
+          .inputs
             %label{:for => "weight"} Weight
             %input{:type => "text", :id => "weight"} 
 
@@ -31,7 +32,7 @@
             "data-size" => "large", 
             "data-text" => "I just completed Squats: 170X5X3", 
             "data-dnt" => "true",
-            "counturl" => "http://www.weightd.com",
+            "counturl" => "www.weightd.com",
             :style => "display:none;",
             :href => "https://twitter.com/share"}
           .twitter-share-button-div
