@@ -18,6 +18,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
   gem 'jasmine'
+  gem 'jasmine-rails'
+  gem 'jasmine-headless-webkit'
 end
 
 # Gems used only for assets and not required
