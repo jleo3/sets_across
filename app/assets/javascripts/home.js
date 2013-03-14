@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  function Tweet() {
+
+  }
+
   $('.button').click(function() {
     var exercise = $('#exercise').val();
     var weight = $('#weight').val();
