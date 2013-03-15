@@ -1,13 +1,12 @@
 source 'https://rubygems.org'
 
 ruby '1.9.3'
-gem 'rails', '4.0.0.beta1'
+gem 'rails', '3.2.12'
 
 gem 'heroku'
 
 gem 'haml'
 gem 'haml-rails'
-gem 'tilt', '1.3.4'
 
 group :production do
   gem 'pg'
@@ -25,14 +24,14 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'sass-rails', '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'libv8'
   gem 'therubyracer', '0.10.2', platforms: :ruby
 
-  gem 'uglifier'
+  gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'
