@@ -2,17 +2,15 @@ function Tweet() {
   return "@_weightd";
 }
 
+function ClearInput() {
+  $('#exercise').val('');
+  $('#weight').val('');
+  $('#reps').val('');
+  $('#sets').val('');
+}
+
 $(document).ready(function() {
-
-
-  function ClearInput() {
-    $('#exercise').val('');
-    $('#weight').val('');
-    $('#reps').val('');
-    $('#sets').val('');
-  }
-
-  $('.button').click(function() {
+  $('.add').click(function() {
     $('.lift').removeAttr("style");
     var exercise = $('#exercise').val();
     var weight = $('#weight').val();
