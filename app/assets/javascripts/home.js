@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-  function Tweet() {
-
+  function ClearInput() {
+    $('#exercise').val('');
+    $('#weight').val('');
+    $('#reps').val('');
+    $('#sets').val('');
   }
 
   $('.button').click(function() {
@@ -11,6 +14,7 @@ $(document).ready(function() {
     var sets = $('#sets').val();
     var tweet = "I just finished " + exercise + ": " + weight + "X" + reps + "X" + sets + " using @_weightd! Check it out: weightd.com #Weightd";
 
+    ClearInput();
     $('#twitter-share-button-div').empty()
     var clone = $('.twitter-share-button-template').clone()
     clone.removeAttr("style"); // unhide the clone
