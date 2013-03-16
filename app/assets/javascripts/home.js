@@ -1,4 +1,9 @@
+function Tweet() {
+  return "@_weightd";
+}
+
 $(document).ready(function() {
+
 
   function ClearInput() {
     $('#exercise').val('');
