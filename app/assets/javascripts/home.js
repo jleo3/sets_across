@@ -8,6 +8,7 @@ $(document).ready(function() {
   }
 
   $('.button').click(function() {
+    $('.lift').removeAttr("style");
     var exercise = $('#exercise').val();
     var weight = $('#weight').val();
     var reps = $('#reps').val();
