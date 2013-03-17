@@ -32,14 +32,17 @@ $(document).ready(function() {
     PopulateLiftTable();
     ClearInput();
 
-    $('#twitter-share-button-div').empty()
-    var clone = $('.twitter-share-button-template').clone()
-    clone.removeAttr("style"); // unhide the clone
-    clone.attr("data-text", tweet); 
-    clone.attr("class", "twitter-share-button"); 
+    if ($('.twitter-share-button-div').children().size() == 0) {
 
-    $('.twitter-share-button-div').append(clone);
+      $('#twitter-share-button-div').empty()
+      var clone = $('.twitter-share-button-template').clone()
+      clone.removeAttr("style"); // unhide the clone
+      clone.attr("data-text", tweet); 
+      clone.attr("class", "twitter-share-button"); 
 
-    $.getScript("http://platform.twitter.com/widgets.js");
+      $('.twitter-share-button-div').append(clone);
+
+      $.getScript("http://platform.twitter.com/widgets.js");
+    }
   });
 });
