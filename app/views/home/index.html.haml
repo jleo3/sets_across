@@ -29,33 +29,9 @@
             :value => "Add",
             :class => "add"}
 
-          %input{:type => "submit", 
-            :value => "Submit",
-            :style => "display:none;",
-            :class => "submit"}
-
-          %a.twitter-share-button-template{"data-related" => "sets_across", 
-            "data-size" => "large", 
-            "data-text" => "", 
-            "data-dnt" => "true",
-            "data-count" => "none",
-            "data-url" => "none",
-            :style => "display:none;",
-            :href => "https://twitter.com/share"}
-          .twitter-share-button-div
+          = render "twitter_button"
 
           .lift{:style => "display:none;"}
-            %table
-              %tr
-                %td Exercise
-                %td Weight
-                %td Reps
-                %td Sets
-              %tr
-                %td
-                  %label{:type => "text", :id => "lift_exercise"}
-                %td{:id => "lift_weight"}
-                %td{:id => "lift_reps"}
-                %td{:id => "lift_sets"}
+            = render "lift_log"
 
       %h2 A Site for Strength
