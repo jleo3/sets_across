@@ -1,5 +1,9 @@
-function Tweet() {
-  return "@_weightd";
+function ComposeTweet() {
+  var exercise = $('#lift_exercise').text();
+  var weight = $('#lift_weight').text();
+  var reps = $('#lift_reps').text();
+  var sets = $('#lift_sets').text();
+  return "My Workout: " + exercise + " " + weight + "X" + reps + "X" + sets + " using @_weightd! Check it out: weightd.com #Weightd";
 }
 
 function ClearInput() {
@@ -23,12 +27,6 @@ function PopulateLiftTable() {
 $(document).ready(function() {
   $('.add').click(function() {
     $('.lift').removeAttr("style");
-    var exercise = $('#exercise').val();
-    var weight = $('#weight').val();
-    var reps = $('#reps').val();
-    var sets = $('#sets').val();
-    var tweet = "I just finished " + exercise + ": " + weight + "X" + reps + "X" + sets + " using @_weightd! Check it out: weightd.com #Weightd";
-
     PopulateLiftTable();
     ClearInput();
 
@@ -37,7 +35,7 @@ $(document).ready(function() {
       $('#twitter-share-button-div').empty()
       var clone = $('.twitter-share-button-template').clone()
       clone.removeAttr("style"); // unhide the clone
-      clone.attr("data-text", tweet); 
+      clone.attr("data-text", ComposeTweet()); 
       clone.attr("class", "twitter-share-button"); 
 
       $('.twitter-share-button-div').append(clone);
