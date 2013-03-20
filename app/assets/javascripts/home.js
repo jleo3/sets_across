@@ -13,28 +13,26 @@ function ClearInput() {
   $('#sets').val('');
 }
 
-function PopulateLiftTable() {
-  var exercise = $('#exercise').val();
-  var weight = $('#weight').val();
-  var reps = $('#reps').val();
-  var sets = $('#sets').val();
-  $('#lift_exercise').text(exercise);
-  $('#lift_weight').text(weight);
-  $('#lift_reps').text(reps);
-  $('#lift_sets').text(sets);
+function AppendRow() {
+  var lift_log_table = $('#lift_log');
+  var row = "<tr><td>" + $('#exercise').val() + "</td>"
+  row = row + "<td>" + $('#weight').val() + "</td>"
+  row = row + "<td>" + $('#reps').val() + "</td>"
+  row = row + "<td>" + $('#sets').val() + "</td></tr>"
+  lift_log_table.append(row);
 }
 
 $(document).ready(function() {
   $('.add').click(function() {
     $('.lift').removeAttr("style");
-    PopulateLiftTable();
+    AppendRow();
     ClearInput();
 
     if ($('.twitter-share-button-div').children().size() == 0) {
 
       $('#twitter-share-button-div').empty()
       var clone = $('.twitter-share-button-template').clone()
-      clone.removeAttr("style"); // unhide the clone
+      clone.removeAttr("style");
       clone.attr("data-text", ComposeTweet()); 
       clone.attr("class", "twitter-share-button"); 
 
