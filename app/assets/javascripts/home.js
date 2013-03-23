@@ -1,9 +1,17 @@
 function ComposeTweet() {
-  var exercise = $('#lift_exercise').text();
-  var weight = $('#lift_weight').text();
-  var reps = $('#lift_reps').text();
-  var sets = $('#lift_sets').text();
-  return "My Workout: " + exercise + " " + weight + "X" + reps + "X" + sets + " using @_weightd! Check it out: weightd.com #Weightd";
+  var lift_log_table = $('#lift_log');
+  var rows = lift_log_table.find('tr');
+  var message = "My Weightd Workout: ";
+  $.each(rows, function(index, value) {
+    if (index == 0) { continue }
+    var exercise = $('#log_exercise').text();
+    var weight = $('#log_weight').text();
+    var reps = $('#log_reps').text();
+    var sets = $('#log_sets').text();
+    message = message + exercise + " " + weight + "X" + reps + "X" + sets
+  });
+  message = message + " using @_weightd! Check it out: weightd.com #Weightd";
+  return message;
 }
 
 function ClearInput() {
@@ -15,10 +23,10 @@ function ClearInput() {
 
 function AppendRow() {
   var lift_log_table = $('#lift_log');
-  var row = "<tr><td>" + $('#exercise').val() + "</td>"
-  row = row + "<td>" + $('#weight').val() + "</td>"
-  row = row + "<td>" + $('#reps').val() + "</td>"
-  row = row + "<td>" + $('#sets').val() + "</td></tr>"
+  var row = "<tr><td id='log_exercise'>" + $('#exercise').val() + "</td>"
+  row = row + "<td id='log_weight'>" + $('#weight').val() + "</td>"
+  row = row + "<td id='log_reps'>" + $('#reps').val() + "</td>"
+  row = row + "<td id='log_sets'>" + $('#sets').val() + "</td></tr>"
   lift_log_table.append(row);
 }
 
