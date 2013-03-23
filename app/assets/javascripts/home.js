@@ -3,7 +3,7 @@ function ComposeTweet() {
   var rows = lift_log_table.find('tr');
   var message = "My Weightd Workout: ";
   $.each(rows, function(index, value) {
-    if (index == 0) { continue }
+    if (index == 0) return true;
     var exercise = $('#log_exercise').text();
     var weight = $('#log_weight').text();
     var reps = $('#log_reps').text();
