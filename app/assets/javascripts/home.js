@@ -42,6 +42,7 @@ $(document).ready(function() {
 
   $('.add').click(function() {
     $('.lift').removeAttr("style");
+    $('.share').removeAttr("style");
     AppendRow();
     ClearInput();
   });
