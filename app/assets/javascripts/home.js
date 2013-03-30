@@ -5,7 +5,9 @@ function ComposeTweet() {
   $.each(rows, function(index, value) {
     if (index == 0) return true;
     var defs = value.getElementsByTagName('td');
-    message = message + defs[0].textContent + " " + defs[1].textContent + "X" + defs[2].textContent + "X" + defs[3].textContent + " ";
+    message = message + defs[0].textContent + " " + defs[1].textContent + "X" + defs[2].textContent + "X" + defs[3].textContent;
+    if (index != rows.size() - 1) message = message + ","
+    message = message + " ";
   });
   message = message + "using @_weightd! Check it out: weightd.com #Weightd";
   return message;
